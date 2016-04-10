@@ -1,0 +1,28 @@
+[user]
+  email = dan@ddez.net
+  name = Dan de Zille
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+[alias]
+  s = status
+  co = checkout
+  cob = checkout -b                 # checkout branch
+  ec = config --global -e           # open config in editor
+  cm = !git add -A && git commit -m # add all changes (+untracked) + commit
+  undo = reset HEAD~1 --mixed       # reset previous commit but keep changes
+
+  # update local repository with latest remote changes, rebases and prunes remotes
+  up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+
+  # better reset, checkin all, then step back, keeps changes in savepoint commit
+  wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard  
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
+[credential]
+  helper = osxkeychain
+[push]
+  default = simple

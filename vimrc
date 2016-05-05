@@ -11,11 +11,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on
-
-syntax on
 
 function! NumberToggle()
   if(&relativenumber == 1)
@@ -26,6 +25,7 @@ function! NumberToggle()
 endfunc
 
 set backspace=2
+syntax on
 set nobackup
 set nowritebackup
 set noswapfile

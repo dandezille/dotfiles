@@ -3,10 +3,7 @@ let mapleader = " "
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
-
-Plugin 'VundleVim/Vundle.vim'
+source $HOME/.vim/vundle.vim
 
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'

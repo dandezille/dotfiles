@@ -4,7 +4,7 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call vundle#rc()
 
 Plugin 'VundleVim/Vundle.vim'
 
@@ -13,7 +13,6 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-markdown'
 Plugin 'fatih/vim-go'
 
-call vundle#end()
 filetype plugin indent on
 
 function! NumberToggle()

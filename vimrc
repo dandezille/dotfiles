@@ -3,7 +3,6 @@ filetype off
 
 source $HOME/.vim/vundle.vim
 
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-markdown'
 Plugin 'fatih/vim-go'
 

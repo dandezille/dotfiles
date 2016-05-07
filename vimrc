@@ -9,8 +9,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-markdown'
 Plugin 'fatih/vim-go'
 
 call vundle#end()
@@ -36,6 +36,9 @@ set incsearch
 set laststatus=2
 set autowrite
 set autoindent
+
+set background=dark
+colorscheme solarized
 
 set tabstop=2
 set shiftwidth=2

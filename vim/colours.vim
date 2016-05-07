@@ -1,7 +1,4 @@
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/vim-tomorrow-theme'
 
-set t_Co=256
-colorscheme solarized
-set background=dark
-
-syntax on
+syntax enable
+colorscheme tomorrow

@@ -9,10 +9,6 @@ function! NumberToggle()
 endfunc
 
 set backspace=2
-syntax on
-set nobackup
-set nowritebackup
-set noswapfile
 set history=500
 set ruler
 set showcmd
@@ -20,9 +16,6 @@ set incsearch
 set laststatus=2
 set autowrite
 set autoindent
-
-set background=dark
-colorscheme solarized
 
 set tabstop=2
 set shiftwidth=2

@@ -55,6 +55,9 @@ plugins=(brew bundler docker gem git npm pip python vagrant golang)
 
 export GOPATH=~/code/go
 export PATH="/Users/dan/.rbenv/shims:/Users/dan/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/.bin"
+
+export PATH=$PATH:/usr/local/share/dotnet
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

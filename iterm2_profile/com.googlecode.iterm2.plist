@@ -17,7 +17,7 @@
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
 	<key>CheckTestRelease</key>
-	<true/>
+	<false/>
 	<key>ClosingHotkeySwitchesSpaces</key>
 	<false/>
 	<key>CommandSelection</key>
@@ -1565,6 +1565,8 @@
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
+	<key>NSScrollViewShouldScrollUnderTitlebar</key>
+	<false/>
 	<key>NSTableView Columns KeyBingingTable</key>
 	<array>
 		<data>
@@ -1576,16 +1578,16 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>302</string>
+		<string>322</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>433 216 924 485 0 0 1366 745 </string>
+	<string>433 245 606 456 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>790 17 570 728 0 0 1366 745 </string>
+	<string>795 293 570 452 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>789 26 570 719 0 0 1366 745 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2329,12 +2331,18 @@
 			<string>/Users/dan</string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
 	<key>NoSyncHaveShownPromoWithId_4</key>
 	<true/>
+	<key>NoSyncInstallationId</key>
+	<string>163C58FF-8848-44F3-914A-E3D1D13880A5</string>
+	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
+	<real>488708809.758618</real>
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>477691490.35875702</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>486756361.49422801</real>
+	<real>487456680.97024602</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2398,12 +2406,14 @@
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
+	<key>SUFeedAlternateAppNameKey</key>
+	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=94</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-04T18:05:52Z</date>
+	<date>2016-06-27T08:26:50Z</date>
 	<key>SUSkippedVersion</key>
 	<string>3.0.0</string>
 	<key>SavePasteHistory</key>
@@ -2449,6 +2459,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>2.1.4</string>
+	<string>3.0.2</string>
 </dict>
 </plist>

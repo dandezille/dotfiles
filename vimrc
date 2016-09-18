@@ -17,6 +17,7 @@ source $HOME/.vim/git.vim
 " Language specific config
 source $HOME/.vim/markdown.vim
 source $HOME/.vim/go.vim
+source $HOME/.vim/elixir.vim
 
 " Do this last, otherwise highlighting goes wonky...
 source $HOME/.vim/colours.vim

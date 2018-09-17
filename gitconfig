@@ -6,19 +6,30 @@
   clean = git media clean %f
   smudge = git media smudge %f
 [alias]
+  ec = config --global -e           # open config in editor
+
   s = status
   co = checkout
   ci = commit
-  cob = checkout -b                 # checkout branch
-  ec = config --global -e           # open config in editor
+  amend = commit --amend
   cm = !git add -A && git commit -m # add all changes (+untracked) + commit
   undo = reset HEAD~1 --mixed       # reset previous commit but keep changes
+
+  cob = checkout -b                 # checkout branch
 
   # update local repository with latest remote changes, rebases and prunes remotes
   up = !git pull --rebase --prune $@ && git submodule update --init --recursive
 
+  save = !git add -A && git commit -m 'SAVEPOINT'
+
   # better reset, checkin all, then step back, keeps changes in savepoint commit
-  wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard  
+  wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+
+  branch-name = !git rev-parse --abbrev-ref HEAD
+	publish = !git push -u origin $(git branch-name)
+
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
 [filter "lfs"]
   clean = git lfs clean %f
   smudge = git lfs smudge %f

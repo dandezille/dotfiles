@@ -8,6 +8,7 @@
 [alias]
   s = status
   co = checkout
+  ci = commit
   cob = checkout -b                 # checkout branch
   ec = config --global -e           # open config in editor
   cm = !git add -A && git commit -m # add all changes (+untracked) + commit

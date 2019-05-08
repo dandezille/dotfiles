@@ -54,4 +54,28 @@ set cursorline
 " Set leader to space for user shortcuts
 let mapleader = " "
 
+" Shortcut to editvimrc
 noremap <leader>ec <C-W><C-v><C-l>:e $MYVIMRC<cr>
+
+" Plugins
+"
+" Install and run vim-plug on first run
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Plugins, :PlugInstall to install
+call plug#begin('~/.vim/plugged')
+
+" yss, cs, ds to add, change and delete surrounds
+Plug 'tpope/vim-surround'
+
+" Status bar
+Plug 'vim-airline/vim-airline'
+
+" Fuzzy file finder
+Plug 'kien/ctrlp.vim'
+
+call plug#end()

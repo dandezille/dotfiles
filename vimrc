@@ -52,10 +52,17 @@ nnoremap k gk
 set cursorline
 
 " Set leader to space for user shortcuts
-let mapleader = " "
+let mapleader = ","
 
-" Shortcut to editvimrc
-noremap <leader>ec <C-W><C-v><C-l>:e $MYVIMRC<cr>
+" Shortcut to edit and source vimrc
+map <leader>ec :execute "edit " . $MYVIMRC<CR>
+map <leader>sc :execute "source " . $MYVIMRC<CR>
+
+" Reformat document
+map <leader>f gg=G
+
+" Paste from system clipboard
+map <leader>p "+p
 
 " Plugins
 "

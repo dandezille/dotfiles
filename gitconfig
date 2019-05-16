@@ -40,3 +40,4 @@
   default = simple
 [core]
 	editor = vim
+	excludesfile = /Users/dan/.gitignore

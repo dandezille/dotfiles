@@ -82,10 +82,13 @@ call plug#begin('~/.vim/plugged')
 " yss, cs, ds to add, change and delete surrounds
 Plug 'tpope/vim-surround'
 
+" Automatically end code structures
+Plug 'tpope/vim-endwise'
+
 " Status bar
 Plug 'vim-airline/vim-airline'
 
 " Fuzzy file finder
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()

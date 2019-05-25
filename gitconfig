@@ -14,6 +14,7 @@
   amend = commit --amend
   cm = !git add -A && git commit -m # add all changes (+untracked) + commit
   undo = reset HEAD~1 --mixed       # reset previous commit but keep changes
+  pf = push --force-with-lease
 
   cob = checkout -b                 # checkout branch
 

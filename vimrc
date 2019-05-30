@@ -64,8 +64,8 @@ map <leader>sc :execute "source " . $MYVIMRC<CR>
 " Reformat document
 map <leader>f gg=G
 
-" Paste from system clipboard
-map <leader>p "+p
+" Use system clipboard
+set clipboard=unnamed
 
 " Plugins
 "

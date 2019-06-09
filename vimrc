@@ -36,7 +36,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-
+    
 " Show matches as you type
 set incsearch
 
@@ -78,9 +78,6 @@ endif
 
 " Plugins, :PlugInstall to install
 call plug#begin('~/.vim/plugged')
-
-" yss, cs, ds to add, change and delete surrounds
-Plug 'tpope/vim-surround'
 
 " Automatically end code structures
 Plug 'tpope/vim-endwise'

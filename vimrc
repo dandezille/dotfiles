@@ -65,7 +65,7 @@ map <leader>sc :execute "source " . $MYVIMRC<CR>
 map <leader>f gg=G
 
 " Use system clipboard
-set clipboard=unnamed
+set clipboard="unnamed"
 
 " Plugins
 "

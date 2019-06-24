@@ -12,6 +12,7 @@ brew "mas"
 brew "nmap"
 brew "python"
 brew "rcm"
+brew "ruby"
 brew "tree"
 
 # Casks

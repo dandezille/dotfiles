@@ -36,7 +36,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-    
+
 " Show matches as you type
 set incsearch
 
@@ -87,5 +87,12 @@ Plug 'vim-airline/vim-airline'
 
 " Fuzzy file finder
 Plug 'ctrlpvim/ctrlp.vim'
+
+" Linting
+Plug 'w0rp/ale'
+let g:ale_fixers = {
+    \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+\}
+let g:ale_fix_on_save = 1
 
 call plug#end()

@@ -25,9 +25,6 @@ syntax on
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
-" Show column and line number in status bar
-set ruler
-
 " Copy and overwrite on save, allows guard to work correctly
 set backupcopy=yes
 

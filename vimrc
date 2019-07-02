@@ -74,6 +74,10 @@ endif
 set undodir=~/.vim/undo-dir
 set undofile
 
+" Allow project local vimrc files
+set exrc
+set secure
+
 " Plugins
 "
 " Install and run vim-plug on first run

@@ -55,8 +55,8 @@ set cursorline
 let mapleader = ","
 
 " Shortcut to edit and source vimrc
-map <leader>ec :execute "edit " . $MYVIMRC<CR>
-map <leader>sc :execute "source " . $MYVIMRC<CR>
+map <leader>ec :edit $MYVIMRC<CR>
+map <leader>sc :source $MYVIMRC<CR>
 
 " Reformat document
 map <leader>f gg=G

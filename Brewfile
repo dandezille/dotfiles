@@ -15,6 +15,7 @@ brew "nmap"
 brew "python"
 brew "rcm"
 brew "ruby"
+brew "tmux"
 brew "tree"
 
 # Casks

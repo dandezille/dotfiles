@@ -1,0 +1,40 @@
+[alias]
+  # open config in editor
+  ec = config --global -e
+
+  s = status
+  co = checkout
+  ci = commit
+
+  # Add any staged changes to previous commit and update commit message
+  amend = commit --amend
+
+  # Stage all changes and commit, commit message as argument
+  cm = !git add -A && git commit -m
+
+  # Reset previous commit but keep changes in working directory
+  undo = reset HEAD~1 --mixed
+
+  # Safer push
+  pf = push --force-with-lease
+
+  # Create branch
+  cob = checkout -b                 # checkout branch
+
+  # update local repository with latest remote changes, rebases and prunes remotes
+  up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+
+  # Stage all and commit, useful for preserving WIP if have to change branch
+  save = !git add -A && git commit -m 'SAVEPOINT'
+
+  # better reset, checkin all, then step back, keeps changes in savepoint commit
+  wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+
+  # Return branch name, helper for publish
+  branch-name = !git rev-parse --abbrev-ref HEAD
+
+  # Adds branch to remote and pushes
+	publish = !git push -u origin $(git branch-name)
+
+  # Pretty log output
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

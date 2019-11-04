@@ -6,6 +6,7 @@ tap "heroku/brew"
 
 # Brews
 brew "ansible"
+brew "ctags"
 brew "fish"
 brew "git"
 brew "heroku"

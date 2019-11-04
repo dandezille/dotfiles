@@ -1,6 +1,6 @@
 [user]
-  email = dan@ddez.net
-  name = Dan de Zille
+	email = dan@ddez.net
+	name = Dan de Zille
 [filter "media"]
   required = true
   clean = git media clean %f

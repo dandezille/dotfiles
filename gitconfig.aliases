@@ -36,5 +36,10 @@
   # Adds branch to remote and pushes
 	publish = !git push -u origin $(git branch-name)
 
+  # More consise log output, log single, log single graph
+  ls = log --oneline --decorate -20
+  lsg = log --oneline --decorate --graph --all -20
+  lsga = log --oneline --decorate --graph --all
+
   # Pretty log output
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

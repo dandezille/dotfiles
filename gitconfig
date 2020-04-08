@@ -18,3 +18,5 @@
 	excludesfile = /Users/dan/.gitignore
 [include]
 	path = /Users/dan/.gitconfig.aliases
+[rebase]
+	autosquash = true

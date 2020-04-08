@@ -11,3 +11,4 @@ tmp/**/*
 !tmp/cache/.keep
 *.pyc
 .idea/
+.vscode/

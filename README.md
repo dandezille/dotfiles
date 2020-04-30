@@ -11,3 +11,9 @@ mkrc to add file to dotfiles
 # Vim
 To install vim plugins:
 `vim +PluginInstall +qall`
+
+# Homebrew
+https://github.com/Homebrew/homebrew-bundle
+
+
+Run `brew bundle`

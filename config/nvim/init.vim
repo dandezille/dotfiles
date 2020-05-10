@@ -5,6 +5,9 @@ let mapleader = ','
 map <leader>ec :execute "edit " . $MYVIMRC<CR>
 map <leader>sc :execute "source " . $MYVIMRC<CR>
 
+" Enable relative line numbers
+set relativenumber
+
 " (normal) Toggle spellcheck with ,s
 nnoremap <leader>s :set invspell<CR>
 

@@ -18,6 +18,10 @@ endif
 set undodir=~/.vim/undo-dir
 set undofile
 
+" Don't write backup files
+set nobackup
+set nowritebackup
+
 " First install vim-plug
 " curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 "     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

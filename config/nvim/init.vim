@@ -5,6 +5,9 @@ let mapleader = ','
 map <leader>ce :execute "edit " . $MYVIMRC<CR>
 map <leader>cs :execute "source " . $MYVIMRC<CR>
 
+" Enable filetype detection
+filetype plugin indent on
+
 " Unsaved files are hidden not closed (:ls, :b[n])
 set hidden
 

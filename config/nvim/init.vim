@@ -15,6 +15,9 @@ set relativenumber
 
 call plug#begin('~/.vim/plugged')
 
+" More useful status
+Plug 'vim-airline/vim-airline'
+
 " Add `end` as require
 Plug 'tpope/vim-endwise'
 

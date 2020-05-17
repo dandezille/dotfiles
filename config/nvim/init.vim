@@ -21,6 +21,9 @@ Plug 'vim-airline/vim-airline'
 " Add `end` as require
 Plug 'tpope/vim-endwise'
 
+" Add/remove comments (gcc and gcgc to toggle)
+Plug 'tpope/vim-commentary'
+
 Plug 'thoughtbot/vim-rspec'
 map <Leader>sf :call RunCurrentSpecFile()<CR>
 map <Leader>ss :call RunNearestSpec()<CR>

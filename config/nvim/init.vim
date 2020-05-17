@@ -16,7 +16,7 @@ set number
 set numberwidth=3
 set relativenumber
 
-" Safe undo info across restarts
+" Save undo info across restarts
 if !isdirectory($HOME."/.vim")
     call mkdir($HOME."/.vim", "", 0770)
 endif

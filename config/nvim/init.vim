@@ -15,6 +15,7 @@ set relativenumber
 
 call plug#begin('~/.vim/plugged')
 
+" Add `end` as require
 Plug 'tpope/vim-endwise'
 
 Plug 'thoughtbot/vim-rspec'

@@ -5,6 +5,9 @@ let mapleader = ','
 map <leader>ce :execute "edit " . $MYVIMRC<CR>
 map <leader>cs :execute "source " . $MYVIMRC<CR>
 
+" Unsaved files are hidden not closed (:ls, :b[n])
+set hidden
+
 " Enable relative line numbers
 set relativenumber
 

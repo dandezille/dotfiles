@@ -18,6 +18,8 @@ nnoremap <leader>s :set invspell<CR>
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-endwise'
+
 Plug 'thoughtbot/vim-rspec'
 map <Leader>sf :call RunCurrentSpecFile()<CR>
 map <Leader>ss :call RunNearestSpec()<CR>

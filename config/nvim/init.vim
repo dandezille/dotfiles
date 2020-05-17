@@ -24,6 +24,15 @@ Plug 'tpope/vim-endwise'
 " Add/remove comments (gcc and gcgc to toggle)
 Plug 'tpope/vim-commentary'
 
+" More powerful motions 
+" <Leader><Leader>w move to word
+Plug 'easymotion/vim-easymotion'
+let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_smartcase = 1
+map <Leader>m <plug>(easymotion-overwin-f2)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
 " Integrate git
 Plug 'tpope/vim-fugitive'
 

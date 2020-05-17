@@ -12,6 +12,8 @@ filetype plugin indent on
 set hidden
 
 " Enable relative line numbers
+set number
+set numberwidth=3
 set relativenumber
 
 " Safe undo info across restarts

@@ -24,6 +24,9 @@ Plug 'tpope/vim-endwise'
 " Add/remove comments (gcc and gcgc to toggle)
 Plug 'tpope/vim-commentary'
 
+" Integrate git
+Plug 'tpope/vim-fugitive'
+
 Plug 'thoughtbot/vim-rspec'
 map <Leader>sf :call RunCurrentSpecFile()<CR>
 map <Leader>ss :call RunNearestSpec()<CR>

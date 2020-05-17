@@ -2,8 +2,8 @@
 let mapleader = ','
 
 " Edit and source vim config
-map <leader>ec :execute "edit " . $MYVIMRC<CR>
-map <leader>sc :execute "source " . $MYVIMRC<CR>
+map <leader>ce :execute "edit " . $MYVIMRC<CR>
+map <leader>cs :execute "source " . $MYVIMRC<CR>
 
 " Enable relative line numbers
 set relativenumber

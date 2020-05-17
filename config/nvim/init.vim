@@ -1,35 +1,6 @@
 " Set leader to comma
 let mapleader = ','
 
-" Edit and source vim config
-map <leader>ce :execute "edit " . $MYVIMRC<CR>
-map <leader>cs :execute "source " . $MYVIMRC<CR>
-
-" Enable filetype detection
-filetype plugin indent on
-
-" Unsaved files are hidden not closed (:ls, :b[n])
-set hidden
-
-" Enable relative line numbers
-set number
-set numberwidth=3
-set relativenumber
-
-" Save undo info across restarts
-if !isdirectory($HOME."/.vim")
-    call mkdir($HOME."/.vim", "", 0770)
-endif
-if !isdirectory($HOME."/.vim/undo-dir")
-    call mkdir($HOME."/.vim/undo-dir", "", 0700)
-endif
-set undodir=~/.vim/undo-dir
-set undofile
-
-" Don't write backup files
-set nobackup
-set nowritebackup
-
 " First install vim-plug
 " curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 "     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -66,3 +37,38 @@ map <Leader>sl :call RunLastSpec()<CR>
 map <Leader>sa :call RunAllSpecs()<CR>
 
 call plug#end()
+
+" Edit and source vim config
+map <leader>ce :execute "edit " . $MYVIMRC<CR>
+map <leader>cs :execute "source " . $MYVIMRC<CR>
+
+" Enable filetype detection
+filetype plugin indent on
+
+" Unsaved files are hidden not closed (:ls, :b[n])
+set hidden
+
+" Enable relative line numbers
+set number
+set numberwidth=3
+set relativenumber
+
+" Enable indent folding
+set foldenable
+set foldmethod=indent
+set foldlevel=999
+
+" Save undo info across restarts
+if !isdirectory($HOME."/.vim")
+    call mkdir($HOME."/.vim", "", 0770)
+endif
+if !isdirectory($HOME."/.vim/undo-dir")
+    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+endif
+set undodir=~/.vim/undo-dir
+set undofile
+
+" Don't write backup files
+set nobackup
+set nowritebackup
+

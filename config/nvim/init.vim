@@ -36,6 +36,11 @@ map <Leader>ss :call RunNearestSpec()<CR>
 map <Leader>sl :call RunLastSpec()<CR>
 map <Leader>sa :call RunAllSpecs()<CR>
 
+" FZF for fuzzy finding
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+noremap <C-p> :Files<Cr>
+
 call plug#end()
 
 " Edit and source vim config

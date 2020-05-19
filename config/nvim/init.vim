@@ -53,6 +53,10 @@ filetype plugin indent on
 " Unsaved files are hidden not closed (:ls, :b[n])
 set hidden
 
+" Scroll through screen lines, not file lines
+nnoremap j gj
+nnoremap k gk
+
 " Enable relative line numbers
 set number
 set numberwidth=3

@@ -41,6 +41,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 noremap <C-p> :Files<Cr>
 
+" vim-peekaboo to view register contents with " or @
+Plug 'junegunn/vim-peekaboo'
+
 call plug#end()
 
 " Edit and source vim config

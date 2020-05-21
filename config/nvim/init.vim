@@ -68,6 +68,10 @@ set relativenumber
 " Use system clipboard as unnamed register
 set clipboard+=unnamedplus
 
+" Sensible search case behaviour
+set ignorecase
+set smartcase
+
 " Enable indent folding
 set foldenable
 set foldmethod=indent

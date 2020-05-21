@@ -65,6 +65,9 @@ set number
 set numberwidth=3
 set relativenumber
 
+" Use system clipboard as unnamed register
+set clipboard+=unnamedplus
+
 " Enable indent folding
 set foldenable
 set foldmethod=indent

@@ -1,5 +1,7 @@
-" Set leader to comma
-let mapleader = ','
+set encoding=utf-8
+
+" Leader
+let mapleader = " "
 
 " First install vim-plug
 " curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \

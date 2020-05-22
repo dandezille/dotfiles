@@ -107,4 +107,5 @@ set undofile
 " Don't write backup files
 set nobackup
 set nowritebackup
+set noswapfile
 

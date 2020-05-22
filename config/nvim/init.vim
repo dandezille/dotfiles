@@ -31,12 +31,14 @@ map <Leader>k <Plug>(easymotion-k)
 " Integrate git
 Plug 'tpope/vim-fugitive'
 
-" Run specs
-Plug 'thoughtbot/vim-rspec'
-map <Leader>sf :call RunCurrentSpecFile()<CR>
-map <Leader>ss :call RunNearestSpec()<CR>
-map <Leader>sl :call RunLastSpec()<CR>
-map <Leader>sa :call RunAllSpecs()<CR>
+" Run tests
+Plug 'janko/vim-test'
+let test#strategy = "dispatch"
+nmap <silent> <Leader>sf :TestFile<CR>
+nmap <silent> <Leader>ss :TestNearest<CR>
+nmap <silent> <Leader>sl :TestLast<CR>
+nmap <silent> <Leader>sa :TestSuite<CR>
+nmap <silent> <Leader>sv :TestVisit<CR>
 
 " FZF for fuzzy finding
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

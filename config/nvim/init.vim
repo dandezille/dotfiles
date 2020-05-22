@@ -72,6 +72,18 @@ set clipboard+=unnamedplus
 set ignorecase
 set smartcase
 
+" More intuitive split directions
+set splitbelow
+set splitright
+
+" Create and move between splits
+nnoremap <C-B> :sp<CR>
+nnoremap <C-V> :vsp<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Enable indent folding
 set foldenable
 set foldmethod=indent

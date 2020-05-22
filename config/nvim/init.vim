@@ -44,6 +44,9 @@ noremap <C-p> :Files<Cr>
 " vim-peekaboo to view register contents with " or @
 Plug 'junegunn/vim-peekaboo'
 
+" tmux aware split switching
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 " Edit and source vim config

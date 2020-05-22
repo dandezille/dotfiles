@@ -49,6 +49,10 @@ Plug 'junegunn/vim-peekaboo'
 " tmux aware split switching
 Plug 'christoomey/vim-tmux-navigator'
 
+" Async commands, eg :Dispatch rspec
+Plug 'tpope/vim-dispatch'
+nmap <Leader>d :Dispatch<space>
+
 call plug#end()
 
 " Edit and source vim config

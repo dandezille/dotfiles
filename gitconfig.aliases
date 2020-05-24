@@ -21,6 +21,10 @@
   # Create branch
   cob = checkout -b                 # checkout branch
 
+  # Diffs
+  d = diff
+  ds = diff --staged  # Diffs
+
   # Clearer branch output
   branches = for-each-ref --sort=-committerdate --format=\"%(color:white)%(refname:short)\t%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\" refs/remotes
 

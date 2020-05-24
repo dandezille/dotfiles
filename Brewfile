@@ -5,29 +5,28 @@ tap "heroku/brew"
 tap "thoughtbot/formulae"
 
 # Brews
-brew "ansible"
-brew "bat"
-brew "ctags"
-brew "diff-so-fancy"
-brew "elm"
-brew "exercism"
-brew "fish"
-brew "git"
-brew "github/gh/gh"
-brew "heroku"
-brew "htop"
-brew "mas"
-brew "mtr"
-brew "neovim"
-brew "nmap"
-brew "nodenv"
-brew "postgresql"
-brew "prettyping"
-brew "pyenv"
-brew "rbenv"
-brew "rcm"
-brew "tmux"
-brew "tree"
+brew "ansible"        # Manage machines/dependencies
+brew "bat"            # Better cat
+brew "diff-so-fancy"  # Better diff
+brew "elm"            # Functional web development
+brew "exercism"       # Programming exercises
+brew "fish"           # Better prompt
+brew "git"            # Source control
+brew "github/gh/gh"   # Github cli tool
+brew "heroku"         # Heroku cli tool
+brew "htop"           # Better top
+brew "mas"            # Manage app store installs
+brew "mtr"            # Better traceroute
+brew "neovim"         # Better vim
+brew "nmap"           # Port scanning
+brew "nodenv"         # Manage node environments
+brew "postgresql"     # Database server
+brew "prettyping"     # Better ping
+brew "pyenv"          # Manage python environments
+brew "rbenv"          # Manage ruby environments
+brew "rcm"            # Manage dotfiles
+brew "tmux"           # Better terminal
+brew "tree"           # Print directory structure
 
 # Casks
 cask "1password"

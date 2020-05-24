@@ -76,6 +76,12 @@ set number
 set numberwidth=3
 set relativenumber
 
+" Softtabs, 2 spaces
+set tabstop=2
+set shiftwidth=2
+set shiftround
+set expandtab
+
 " Use system clipboard as unnamed register
 set clipboard+=unnamedplus
 

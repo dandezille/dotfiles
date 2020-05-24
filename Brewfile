@@ -6,6 +6,7 @@ tap "thoughtbot/formulae"
 
 # Brews
 brew "ansible"
+brew "bat"
 brew "ctags"
 brew "elm"
 brew "exercism"

@@ -25,3 +25,6 @@ Run `brew bundle`
 # Vim
 To install vim plugins:
 `vim +PluginInstall +qall`
+
+# Inspirations
+[CLI: improved](https://remysharp.com/2018/08/23/cli-improved?utm_source=hackernewsletter&utm_medium=email&utm_term=fav)

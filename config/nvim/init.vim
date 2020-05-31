@@ -119,4 +119,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-dispatch'
 nmap <Leader>d :Dispatch<space>
 
+" Source formatting <Leader>p
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
 call plug#end()

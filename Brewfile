@@ -9,6 +9,7 @@ brew "ansible"        # Manage machines/dependencies
 brew "bat"            # Better cat
 brew "diff-so-fancy"  # Better diff
 brew "elm"            # Functional web development
+brew "exa"            # Fancier ls (also used for tree)
 brew "exercism"       # Programming exercises
 brew "fish"           # Better prompt
 brew "git"            # Source control
@@ -26,7 +27,6 @@ brew "pyenv"          # Manage python environments
 brew "rbenv"          # Manage ruby environments
 brew "rcm"            # Manage dotfiles
 brew "tmux"           # Better terminal
-brew "tree"           # Print directory structure
 
 # Casks
 cask "1password"

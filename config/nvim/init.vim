@@ -122,4 +122,8 @@ nmap <Leader>d :Dispatch<space>
 " Source formatting <Leader>p
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
+" Typescript
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript', { 'for': 'typescript.jsx' }
+
 call plug#end()

@@ -1,0 +1,4 @@
+--database=postgresql
+--skip-test
+--skip-bundle
+--template=~/.dotfiles/rails_template.rb

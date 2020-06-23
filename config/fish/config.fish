@@ -4,3 +4,4 @@ set -gx FZF_DEFAULT_COMMAND 'rg --files'
 status --is-interactive; and source (rbenv init -|psub)
 status --is-interactive; and source (pyenv init -|psub)
 status --is-interactive; and source (nodenv init -|psub)
+starship init fish | source

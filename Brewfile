@@ -26,6 +26,7 @@ brew "prettyping"     # Better ping
 brew "pyenv"          # Manage python environments
 brew "rbenv"          # Manage ruby environments
 brew "rcm"            # Manage dotfiles
+brew "starship"       # Prompt
 brew "tmux"           # Better terminal
 
 # Casks

@@ -1,3 +1,4 @@
+# Setup and install gems
 gem 'clearance'
 
 gem_group :development, :test do
@@ -7,11 +8,15 @@ gem_group :development, :test do
 end
 
 run 'bundle install'
+
+# Install and configure rspec
 generate 'rspec:install'
 
 insert_into_file 'spec/rails_helper.rb',
                  "Dir[Rails.root.join('spec/support/**/*.rb')].sort.each { |file| require file }\n",
                  after: "# Add additional requires below this line. Rails is not loaded until this point!\n"
+
+# Configure FactoryBot
 
 create_file 'spec/support/factory_bot.rb',
             'RSpec.configure { |config| config.include FactoryBot::Syntax::Methods }'
@@ -26,6 +31,7 @@ RSpec.describe FactoryBot do
 end
 EOL
 
+# Install and configure clearance
 rails_command 'db:create'
 generate 'clearance:install'
 rails_command 'db:migrate'

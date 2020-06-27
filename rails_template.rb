@@ -5,6 +5,7 @@ gem_group :development, :test do
   gem 'awesome_print'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
+  gem 'dotenv-rails'
 end
 
 run 'bundle install'
@@ -62,3 +63,19 @@ insert_into_file 'app/views/layouts/application.html.erb',
 insert_into_file 'app/views/layouts/application.html.erb',
                  "    <%= render partial: 'layouts/header' %>\n",
                  after: "<body>\n"
+
+env_file = <<-EOL
+  
+    # Generate full URLs in emails   
+    config.action_mailer.default_url_options = { host: ENV['HOST_NAME'] }
+EOL
+
+insert_into_file 'config/application.rb',
+                 env_file,
+                 after: "config.generators.system_tests = nil\n"
+    
+# Configure environment variables
+create_file '.env', <<-EOL
+HOST_NAME=localhost:3000
+EOL
+

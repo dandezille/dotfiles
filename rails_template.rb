@@ -8,6 +8,12 @@ gem_group :development, :test do
   gem 'dotenv-rails'
 end
 
+gem_group :test do
+  gem 'capybara'
+  gem 'rails-controller-testing'
+  gem 'shoulda-matchers'
+end
+
 run 'bundle install'
 
 # Install and configure rspec
@@ -29,6 +35,22 @@ require 'rails_helper'
 
 RSpec.describe FactoryBot do
   it { FactoryBot.lint traits: true }
+end
+EOL
+
+# Configure capybara
+
+insert_into_file 'spec/rails_helper.rb',
+                 "require 'capybara/rspec'\n",
+                 after: "# Add additional requires below this line. Rails is not loaded until this point!\n"
+
+# Configure Shoulda Matchers
+create_file 'spec/support/shoulda_matchers.rb', <<-EOL
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
 end
 EOL
 

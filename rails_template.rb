@@ -86,15 +86,25 @@ insert_into_file 'app/views/layouts/application.html.erb',
                  "    <%= render partial: 'layouts/header' %>\n",
                  after: "<body>\n"
 
-env_file = <<-EOL
+default_url_options = <<-EOL
   
     # Generate full URLs in emails   
     config.action_mailer.default_url_options = { host: ENV['HOST_NAME'] }
 EOL
 
 insert_into_file 'config/application.rb',
-                 env_file,
+                 default_url_options,
                  after: "config.generators.system_tests = nil\n"
+    
+clearance_test_middleware = <<-EOL
+
+  # Use auth backdoor in tests
+  config.middleware.use Clearance::BackDoor 
+EOL
+
+insert_into_file 'config/environments/test.rb',
+                 clearance_test_middleware,
+                 after: "# config.action_view.raise_on_missing_translations = true\n"
     
 # Configure environment variables
 create_file '.env', <<-EOL

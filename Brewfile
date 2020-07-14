@@ -31,7 +31,6 @@ brew "tmux"           # Better terminal
 
 # Casks
 cask "1password"
-cask "avast-security"
 cask "balenaetcher"
 cask "bartender"
 cask "cncnet"

@@ -126,4 +126,7 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript', { 'for': 'typescript.jsx' }
 
+" Toml
+Plug 'cespare/vim-toml'
+
 call plug#end()

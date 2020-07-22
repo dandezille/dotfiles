@@ -15,10 +15,10 @@
   default = simple
 [core]
 	editor = nvim
-	excludesfile = /Users/dan/.gitignore
+	excludesfile = ~/.gitignore
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [include]
-	path = /Users/dan/.gitconfig.aliases
+	path = ~/.gitconfig.aliases
 [rebase]
 	autosquash = true
 [merge]

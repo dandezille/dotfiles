@@ -19,7 +19,7 @@
   pf = push --force-with-lease
 
   # Create branch
-  cob = checkout -b                 # checkout branch
+  cob = checkout -b
 
   # Diffs
   d = diff

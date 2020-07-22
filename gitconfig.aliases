@@ -2,7 +2,7 @@
   # open config in editor
   ec = config --global -e
 
-  s = status
+  s = status --short --branch
   co = checkout
   ci = commit
 

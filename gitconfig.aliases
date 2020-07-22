@@ -7,7 +7,7 @@
   ci = commit
 
   # Add any staged changes to previous commit and update commit message
-  amend = commit --amend
+  amend = commit --amend --no-edit
 
   # Stage all changes and commit, commit message as argument
   cm = !git add -A && git commit -m

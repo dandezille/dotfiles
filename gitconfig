@@ -21,6 +21,8 @@
 	path = /Users/dan/.gitconfig.aliases
 [rebase]
 	autosquash = true
+[merge]
+	ff = only
 [fetch]
 	prune = true
 [color]

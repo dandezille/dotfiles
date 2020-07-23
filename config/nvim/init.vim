@@ -7,6 +7,9 @@ let mapleader = " "
 map <leader>ce :execute "edit " . $MYVIMRC<CR>
 map <leader>cs :execute "source " . $MYVIMRC<CR>
 
+" enable syntax highlighting
+syntax enable
+
 " Enable filetype detection
 filetype plugin indent on
 

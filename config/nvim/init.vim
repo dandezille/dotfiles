@@ -127,4 +127,10 @@ Plug 'peitalin/vim-jsx-typescript', { 'for': 'typescript.jsx' }
 " Toml
 Plug 'cespare/vim-toml'
 
+" Work with 'surroundings'
+" eg cs"' goes from " -> '
+" works well with tags, cs'<p> or cst"
+" Add tags with ysMOTION eg ysiw<em>
+Plug 'tpope/vim-surround'
+
 call plug#end()

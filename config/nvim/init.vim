@@ -50,11 +50,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Enable indent folding
-set foldenable
-set foldmethod=indent
-set foldlevel=999
-
 " Save undo info across restarts
 if !isdirectory($HOME."/.vim")
     call mkdir($HOME."/.vim", "", 0770)

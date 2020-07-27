@@ -1,5 +1,6 @@
 # Setup and install gems
 gem 'clearance'
+gem 'dotenv-rails'
 
 gem_group :development, :test do
   gem 'awesome_print'

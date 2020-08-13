@@ -6,6 +6,7 @@ tap "thoughtbot/formulae"
 
 # Brews
 brew "bat"            # Better cat
+brew "ctags"          # Language tags
 brew "diff-so-fancy"  # Better diff
 brew "elm"            # Functional web development
 brew "entr"           # Auto-run on file changes

@@ -3,6 +3,7 @@
 # Taps
 tap "heroku/brew"
 tap "thoughtbot/formulae"
+tap "homebrew/cask-drivers"
 
 # Brews
 brew "bat"            # Better cat
@@ -54,9 +55,9 @@ cask "malwarebytes"
 cask "notion"
 cask "parallels"
 cask "postman"
+cask "sonos"
 cask "steam"
 cask "sketch"
-cask "homebrew/cask-drivers/sonos"
 cask "spectacle"
 cask "spotify"
 cask "superduper"

@@ -120,17 +120,37 @@ nmap <Leader>d :Dispatch<space>
 " Source formatting <Leader>p
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
-" Typescript
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript', { 'for': 'typescript.jsx' }
-
-" Toml
-Plug 'cespare/vim-toml'
-
 " Work with 'surroundings'
 " eg cs"' goes from " -> '
 " works well with tags, cs'<p> or cst"
 " Add tags with ysMOTION eg ysiw<em>
 Plug 'tpope/vim-surround'
+
+" Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+nmap <silent> <Leader>gr :GoRun<CR>
+nmap <silent> <Leader>gl :GoLint<CR>
+
+" Language packs
+Plug 'sheerun/vim-polyglot'
+
+" Intellisense, :CocUpdate to update
+let g:coc_global_extensions = [
+      \ 'coc-css',
+      \ 'coc-eslint',
+      \ 'coc-html',
+      \ 'coc-json',
+      \ 'coc-omnisharp',
+      \ 'coc-prettier',
+      \ 'coc-python',
+      \ 'coc-solargraph',
+      \ 'coc-tailwindcss',
+      \ 'coc-tsserver',
+      \ ]
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Tab and shift-tab to navigate completion
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 call plug#end()

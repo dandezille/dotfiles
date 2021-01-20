@@ -3,8 +3,11 @@
   ec = config --global -e
 
   s = status --short --branch
-  co = checkout
   ci = commit
+
+  # Switch and create branch
+  sw = switch
+  scw = switch -c
 
   # Add any staged changes to previous commit and update commit message
   amend = commit --amend --no-edit
@@ -17,9 +20,6 @@
 
   # Safer push
   pf = push --force-with-lease
-
-  # Create branch
-  cob = checkout -b
 
   # Diffs
   d = diff

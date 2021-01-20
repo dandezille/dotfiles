@@ -126,4 +126,12 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Add tags with ysMOTION eg ysiw<em>
 Plug 'tpope/vim-surround'
 
+" Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+nmap <silent> <Leader>gr :GoRun<CR>
+nmap <silent> <Leader>gl :GoLint<CR>
+
+" Language packs
+Plug 'sheerun/vim-polyglot'
+
 call plug#end()

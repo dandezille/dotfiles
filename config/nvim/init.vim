@@ -120,13 +120,6 @@ nmap <Leader>d :Dispatch<space>
 " Source formatting <Leader>p
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
-" Typescript
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript', { 'for': 'typescript.jsx' }
-
-" Toml
-Plug 'cespare/vim-toml'
-
 " Work with 'surroundings'
 " eg cs"' goes from " -> '
 " works well with tags, cs'<p> or cst"

@@ -134,4 +134,8 @@ nmap <silent> <Leader>gl :GoLint<CR>
 " Language packs
 Plug 'sheerun/vim-polyglot'
 
+" Tab and shift-tab to navigate completion
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 call plug#end()

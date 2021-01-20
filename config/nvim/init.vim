@@ -134,6 +134,21 @@ nmap <silent> <Leader>gl :GoLint<CR>
 " Language packs
 Plug 'sheerun/vim-polyglot'
 
+" Intellisense, :CocUpdate to update
+let g:coc_global_extensions = [
+      \ 'coc-css',
+      \ 'coc-eslint',
+      \ 'coc-html',
+      \ 'coc-json',
+      \ 'coc-omnisharp',
+      \ 'coc-prettier',
+      \ 'coc-python',
+      \ 'coc-solargraph',
+      \ 'coc-tailwindcss',
+      \ 'coc-tsserver',
+      \ ]
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Tab and shift-tab to navigate completion
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"

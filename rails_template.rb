@@ -6,7 +6,6 @@ gem_group :development, :test do
   gem 'awesome_print'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
-  gem 'dotenv-rails'
 end
 
 gem_group :test do

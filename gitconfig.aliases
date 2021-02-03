@@ -7,7 +7,7 @@
 
   # Switch and create branch
   sw = switch
-  scw = switch -c
+  swc = switch -c
 
   # Add any staged changes to previous commit and update commit message
   amend = commit --amend --no-edit

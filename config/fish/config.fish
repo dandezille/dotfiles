@@ -6,3 +6,6 @@ set -gx fish_user_paths "$HOME/.dotfiles/bin" $fish_user_paths
 set -gx fish_user_paths "$HOME/.cargo/bin" $fish_user_paths
 set -gx fish_user_paths ".git/safe/../../bin" $fish_user_paths
 starship init fish | source
+
+# opam configuration
+source /Users/dan/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true

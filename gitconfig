@@ -43,3 +43,5 @@
 	showUntrackedFiles = all
 [transfer]
 	fsckobjects = true
+[init]
+	defaultBranch = main

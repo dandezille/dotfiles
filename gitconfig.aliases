@@ -5,9 +5,11 @@
   s = status --short --branch
   ci = commit
 
-  # Switch and create branch
+  # Switch branch
   sw = switch
-  swc = switch -c
+
+  # New branch
+  nb = switch -c
 
   # Add any staged changes to previous commit and update commit message
   amend = commit --amend --no-edit
@@ -48,6 +50,7 @@
 
   # More consise log output, log single, log single graph
   ls = log --oneline --decorate -20
+  lsa = log --oneline --decorate
   lsg = log --oneline --decorate --graph --all -20
   lsga = log --oneline --decorate --graph --all
 

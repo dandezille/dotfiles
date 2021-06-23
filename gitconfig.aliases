@@ -28,6 +28,9 @@
   # Clearer branch output
   branches = for-each-ref --sort=-committerdate --format=\"%(color:white)%(refname:short)\t%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\" refs/remotes
 
+  # Initialise with empty commit
+  init-empty = !git init && git commit --allow-empty -m \"Initial commit\"
+
   # update local repository with latest remote changes, rebases and prunes remotes
   up = !git pull --rebase --prune $@ && git submodule update --init --recursive
 

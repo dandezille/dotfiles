@@ -16,7 +16,7 @@ brew "exercism"       # Programming exercises
 brew "fish"           # Better prompt
 brew "fzf"            # Fuzzies
 brew "git"            # Source control
-brew "github/gh/gh"   # Github cli tool
+brew "gh"             # Github cli tool
 brew "gpatch"         # Opam dependency
 brew "heroku"         # Heroku cli tool
 brew "htop"           # Better top
@@ -73,3 +73,8 @@ cask "whatsapp"
 cask "yubico-authenticator"
 cask "Zettlr"
 
+# Mac App Store
+mas "Tailscale", id: 1475387142
+mas "Things", id: 904280696
+mas "Pixelmator", id: 407963104
+mas "Xcode", id: 497799835

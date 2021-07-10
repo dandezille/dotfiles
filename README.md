@@ -8,6 +8,9 @@ Run rcup
 
 mkrc to add file to dotfiles
 
+# macOS
+Run `./.macos` to set some sensible macOS defaults
+
 # Fish
 Show fish_user_path entries with line numbers:
 `echo $fish_user_paths | tr " " "\n" | nl`

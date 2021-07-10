@@ -6,37 +6,37 @@ tap "thoughtbot/formulae"
 tap "homebrew/cask-drivers"
 
 # Brews
-brew "bat"            # Better cat
-brew "diff-so-fancy"  # Better diff
-brew "elm"            # Functional web development
-brew "entr"           # Auto-run on file changes
-brew "exa"            # Fancier ls (also used for tree)
-brew "exercism"       # Programming exercises
-brew "fish"           # Better prompt
-brew "fzf"            # Fuzzies
-brew "gh"             # Github cli tool
-brew "git"            # Source control
-brew "gpatch"         # Opam dependency
-brew "heroku"         # Heroku cli tool
-brew "htop"           # Better top
-brew "mas"            # Manage app store installs
-brew "mkcert"         # Local trust dev certificates
-brew "mtr"            # Better traceroute
-brew "neovim"         # Better vim
-brew "nmap"           # Port scanning
-brew "nns"            # Firefox support mkcert
-brew "nodenv"         # Manage node environments
-brew "opam"           # OCaml
-brew "postgresql"     # Database server
-brew "prettyping"     # Better ping
-brew "pyenv"          # Manage python environments
-brew "rbenv"          # Manage ruby environments
-brew "rcm"            # Manage dotfiles
-brew "ripgrep"        # Fast search
-brew "starship"       # Prompt
-brew "tmux"           # Better terminal
+brew "bat"             # Better cat
+brew "diff-so-fancy"   # Better diff
+brew "elm"             # Functional web development
+brew "entr"            # Auto-run on file changes
+brew "exa"             # Fancier ls (also used for tree)
+brew "exercism"        # Programming exercises
+brew "fish"            # Better prompt
+brew "fzf"             # Fuzzies
+brew "gh"              # Github cli tool
+brew "git"             # Source control
+brew "gpatch"          # Opam dependency
+brew "heroku"          # Heroku cli tool
+brew "htop"            # Better top
+brew "mas"             # Manage app store installs
+brew "mkcert"          # Local trust dev certificates
+brew "mtr"             # Better traceroute
+brew "neovim"          # Better vim
+brew "nmap"            # Port scanning
+brew "nns"             # Firefox support mkcert
+brew "nodenv"          # Manage node environments
+brew "opam"            # OCaml
+brew "postgresql"      # Database server
+brew "prettyping"      # Better ping
+brew "pyenv"           # Manage python environments
+brew "rbenv"           # Manage ruby environments
+brew "rcm"             # Manage dotfiles
+brew "ripgrep"         # Fast search
+brew "starship"        # Prompt
+brew "tmux"            # Better terminal
 brew "universal-ctags" # Language tags
-brew "whalebrew"      # Install dependencies with docker
+brew "whalebrew"       # Install dependencies with docker
 
 # Casks
 cask_args appdir: "~/Applications"

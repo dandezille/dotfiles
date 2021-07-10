@@ -41,6 +41,7 @@ brew "whalebrew"       # Install dependencies with docker
 # Casks
 cask_args appdir: "~/Applications"
 cask "1password"
+cask "alfred"
 cask "balenaetcher"
 cask "bartender"
 cask "cncnet"

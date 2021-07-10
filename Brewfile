@@ -2,8 +2,8 @@
 
 # Taps
 tap "heroku/brew"
-tap "thoughtbot/formulae"
 tap "homebrew/cask-drivers"
+tap "thoughtbot/formulae"
 
 # Brews
 brew "bat"             # Better cat
@@ -61,11 +61,11 @@ cask "malwarebytes"
 cask "notion"
 cask "parallels"
 cask "postman"
-cask "sonos"
-cask "steam"
 cask "sketch"
+cask "sonos"
 cask "spectacle"
 cask "spotify"
+cask "steam"
 cask "steam"
 cask "superduper"
 cask "transmission"
@@ -76,7 +76,7 @@ cask "yubico-authenticator"
 cask "Zettlr"
 
 # Mac App Store
+mas "Pixelmator", id: 407963104
 mas "Tailscale", id: 1475387142
 mas "Things", id: 904280696
-mas "Pixelmator", id: 407963104
 mas "Xcode", id: 497799835

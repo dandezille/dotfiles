@@ -82,7 +82,6 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-commentary'
 
 " More powerful motions 
-" <Leader><Leader>w move to word
 Plug 'easymotion/vim-easymotion'
 let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
@@ -126,10 +125,18 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Add tags with ysMOTION eg ysiw<em>
 Plug 'tpope/vim-surround'
 
+" Display file structure using tags
+Plug 'preservim/tagbar'
+nmap <silent> <Leader>tt :TagbarToggle<CR>
+
 " Go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 nmap <silent> <Leader>gr :GoRun<CR>
 nmap <silent> <Leader>gl :GoLint<CR>
+
+" Rust
+Plug 'rust-lang/rust.vim'
+let g:rustfmt_autosave = 1
 
 " Language packs
 Plug 'sheerun/vim-polyglot'

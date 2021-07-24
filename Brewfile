@@ -16,7 +16,6 @@ brew "fish"            # Better prompt
 brew "fzf"             # Fuzzies
 brew "gh"              # Github cli tool
 brew "git"             # Source control
-brew "gpatch"          # Opam dependency
 brew "heroku"          # Heroku cli tool
 brew "htop"            # Better top
 brew "mas"             # Manage app store installs
@@ -26,7 +25,6 @@ brew "neovim"          # Better vim
 brew "nmap"            # Port scanning
 brew "nns"             # Firefox support mkcert
 brew "nodenv"          # Manage node environments
-brew "opam"            # OCaml
 brew "postgresql"      # Database server
 brew "prettyping"      # Better ping
 brew "pyenv"           # Manage python environments

@@ -18,12 +18,13 @@ brew "gh"              # Github cli tool
 brew "git"             # Source control
 brew "heroku"          # Heroku cli tool
 brew "htop"            # Better top
+brew "hyperkit"        # Required for minikube
 brew "mas"             # Manage app store installs
+brew "minikube"        # Local kubernetes
 brew "mkcert"          # Local trust dev certificates
 brew "mtr"             # Better traceroute
 brew "neovim"          # Better vim
 brew "nmap"            # Port scanning
-brew "nns"             # Firefox support mkcert
 brew "nodenv"          # Manage node environments
 brew "postgresql"      # Database server
 brew "prettyping"      # Better ping
@@ -33,7 +34,6 @@ brew "rcm"             # Manage dotfiles
 brew "ripgrep"         # Fast search
 brew "starship"        # Prompt
 brew "tmux"            # Better terminal
-brew "universal-ctags" # Language tags
 brew "whalebrew"       # Install dependencies with docker
 
 # Casks
@@ -43,7 +43,6 @@ cask "alfred"
 cask "balenaetcher"
 cask "bartender"
 cask "cncnet"
-cask "docker"
 cask "dropbox"
 cask "expressvpn"
 cask "firefox"

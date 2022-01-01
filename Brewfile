@@ -18,9 +18,7 @@ brew "gh"              # Github cli tool
 brew "git"             # Source control
 brew "heroku"          # Heroku cli tool
 brew "htop"            # Better top
-brew "hyperkit"        # Required for minikube
 brew "mas"             # Manage app store installs
-brew "minikube"        # Local kubernetes
 brew "mkcert"          # Local trust dev certificates
 brew "mtr"             # Better traceroute
 brew "neovim"          # Better vim
@@ -34,18 +32,13 @@ brew "rcm"             # Manage dotfiles
 brew "ripgrep"         # Fast search
 brew "starship"        # Prompt
 brew "tmux"            # Better terminal
-brew "whalebrew"       # Install dependencies with docker
 
 # Casks
 cask_args appdir: "~/Applications"
-cask "1password"
 cask "alfred"
 cask "balenaetcher"
 cask "bartender"
 cask "cncnet"
-cask "dropbox"
-cask "expressvpn"
-cask "firefox"
 cask "flux"
 cask "github"
 cask "gitup"
@@ -63,7 +56,6 @@ cask "sketch"
 cask "sonos"
 cask "spectacle"
 cask "spotify"
-cask "steam"
 cask "steam"
 cask "superduper"
 cask "transmission"

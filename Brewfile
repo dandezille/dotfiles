@@ -8,11 +8,13 @@ brew "git"             # Source control
 brew "htop"            # Better top
 brew "jq"              # JSON query
 brew "mas"             # Manage app store installs
+brew "neovim"          # Improved vim
+brew "pyenv"           # Python environment management
+brew "rbenv"           # Ruby environment management
 brew "syncthing"       # File sync
 
 # Casks
 cask_args appdir: "~/Applications"
-cask "alfred"
 cask "balenaetcher"
 cask "bartender"
 cask "flux"
@@ -22,6 +24,7 @@ cask "parallels"
 cask "protonvpn"
 cask "rectangle"
 cask "transmission"
+cask "vlc"
 
 # Mac App Store
 mas "Tailscale", id: 1475387142
